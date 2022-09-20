@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владимир Кузин](https://up.htmlacademy.ru/htmlcss/35/user/2227753).
-* Наставник: `Неизвестно`.
+* Наставник: [Arthur Litovko](https://htmlacademy.ru/profile/id6927).
 
 ---
 
