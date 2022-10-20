@@ -81,3 +81,11 @@ body {
 .advantages-without-picture {
   background-color: rgba(131, 179, 211, 0.12);
 }
+
+.are-you-interested p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+}
