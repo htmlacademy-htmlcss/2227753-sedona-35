@@ -89,3 +89,20 @@ body {
   text-align: center;
   color: #333333;
 }
+
+.newsletter {
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  align-items: center;
+  background-image: url("../images/footer/Subscribe.jpg");
+  background-color: rgba(131, 179, 211, 0.2);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.newsletter .section-title {
+  color: #ffffff;
+}
