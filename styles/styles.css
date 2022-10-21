@@ -124,7 +124,7 @@ body {
 
 .background-for-catalog {
   background-image: url("../images/catalog/filter-background.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat; /*Затем поставить no-repeat*/
   background-size: 100% auto;
 }
 
@@ -132,5 +132,28 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  color: #ffffff;
+}
+
+.breadcrumbs {
+  color: #ffffff;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
   color: #ffffff;
 }
