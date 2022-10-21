@@ -121,3 +121,16 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
+.background-for-catalog {
+  background-image: url("../images/catalog/filter-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.catalog-header-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+  color: #ffffff;
+}
