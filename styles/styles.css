@@ -157,3 +157,48 @@ body {
   line-height: 23px;
   color: #ffffff;
 }
+
+.sorting-container {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #ffffff
+}
+
+.hotels-found-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.select-control {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 20px;
+  gap: 94px;
+  width: 292px;
+  height: 49px;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+  background-color: #ffffff
+}
+
+.view-button {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 12px;
+  gap: 10px;
+  width: 48px;
+  height: 48px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
