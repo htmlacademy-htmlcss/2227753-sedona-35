@@ -37,6 +37,11 @@ body {
   text-transform: capitalize;
 }
 
+.menu-link {
+  color: #000000;
+  text-decoration: none;
+}
+
 .welcome-to-sedona {
   background-image: url("../images/index-background.jpg");
   background-color: rgba(131, 179, 211, 0.2);
