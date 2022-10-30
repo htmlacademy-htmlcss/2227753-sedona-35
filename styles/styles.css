@@ -30,10 +30,54 @@ body {
   background-color: #F2F2F2;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1200px;
+}
+
 .page-header {
   background-color: #ffffff;
   color: #000000;
+  display: flex;
+  width: 1200px;
+  height: 64px;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  z-index: 2;
 }
+
+.site-logo {
+  width: 138px;
+  margin-left: 70px;
+  margin-right: 30px;
+}
+
+.navigation-list, .menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-list {
+  width: 339px;
+  gap: 32px;
+}
+
+.menu-list {
+  max-width: 270px;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: 70px;
+}
+
+.menu-item:last-child {
+  margin-left: 8px;
+}
+
 
 .navigation-link {
   font-weight: 700;
@@ -43,6 +87,11 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+.navigation-link-current {
+  padding-bottom: 18px;
+  border-bottom: solid 2px #756257;
 }
 
 .menu-link {
@@ -201,6 +250,10 @@ body {
   background-color: #ffffff
 }
 
+.hotels-found-list {
+  background-color: #FFFFFF;
+}
+
 .hotels-found-title {
   font-weight: 700;
   font-size: 30px;
@@ -234,12 +287,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 8px 50px;
-  gap: 10px;
   width: 160px;
   height: 36px;
   background: #756157;
   border-radius: 4px;
+  border-color: transparent;
   text-transform: uppercase;
 }
 
@@ -360,4 +412,17 @@ ol, ul, menu {
 .pagination-current {
   color: #000000;
   background-color: #F2F2F2;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
