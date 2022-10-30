@@ -19,7 +19,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     color: #000000;
-    background-color: #ffffff;
+    background-color: #F2F2F2;
 }
 
 .page-header {
@@ -44,7 +44,7 @@ body {
 
 .welcome-to-sedona {
   background-image: url("../images/index-background.jpg");
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: black;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -59,12 +59,20 @@ body {
   color:#000000;
 }
 
+.advantages-opening {
+  background-color: #FFFFFF;
+}
+
 .advantages-opening p {
   font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #333333;
+}
+
+.advantages {
+  background-color: #FFFFFF;
 }
 
 .advantages-list {
@@ -86,6 +94,10 @@ body {
 
 .advantages-without-picture {
   background-color: rgba(131, 179, 211, 0.12);
+}
+
+.are-you-interested {
+  background-color: #FFFFFF;
 }
 
 .are-you-interested p {
@@ -111,6 +123,10 @@ body {
 
 .newsletter .section-title {
   color: #ffffff;
+}
+
+.page-footer {
+  background-color: #FFFFFF;
 }
 
 .footer-phone {
@@ -197,7 +213,8 @@ body {
   background-color: #ffffff
 }
 
-button {
+.button {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
@@ -211,7 +228,33 @@ button {
   height: 36px;
   background: #756157;
   border-radius: 4px;
+  text-transform: uppercase;
+}
 
+.search-hotel-button {
+  width: 376px;
+  height: 52px;
+}
+
+.newsletter-button {
+  width: 232px;
+  background: #82B3D3;
+  border-radius: 0px 4px 4px 0px;
+}
+
+.footer-social .button {
+  background-color: transparent;
+}
+
+.apply-button {
+  width: 191px;
+  background: #82B3D3;
+}
+
+.reset-button {
+  width: 191px;
+  background: transparent;
+  border: none;
 }
 
 .view-button {
@@ -226,6 +269,7 @@ button {
   height: 48px;
   border: 2px solid #000000;
   border-radius: 4px;
+  background-color: #FFFFFF;
 }
 
 .hotel-card {
@@ -262,36 +306,35 @@ button {
 
 .more-about-button {
   text-decoration: none;
+  width: 140px;
 }
 
 .add-to-favourites {
-  text-align: center;
-  text-transform: uppercase;
   width: 140px;
-  height: 36px;
   background: #82B3D3;
   text-decoration: none;
-  color: #ffffff;
 }
 
 .rating-description {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
-  text-transform: uppercase;
   color: #333333;
-  background: #F2F2F2;
-  border-radius: 4px;
 }
 
 .rating-button {
   text-decoration: none;
+  width: 140px;
+  height: 37px;
+  background: #F2F2F2;
 }
 
 .pagination {
   background-color: #ffffff;
-  list-style: none;
+}
+
+ol, ul, menu {
+  list-style-type: none;
 }
 
 .pagination-link {
