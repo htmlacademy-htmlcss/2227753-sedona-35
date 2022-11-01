@@ -193,8 +193,11 @@ body {
 .are-you-interested {
   background-color: #FFFFFF;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  padding: 96px 304px;
 }
 
 .are-you-interested p {
@@ -203,6 +206,8 @@ body {
   line-height: 26px;
   text-align: center;
   color: #333333;
+  margin-top: 20px;
+  margin-bottom: 54px;
 }
 
 .newsletter {
