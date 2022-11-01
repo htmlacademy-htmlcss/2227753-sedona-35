@@ -266,19 +266,36 @@ body {
   background-size: cover;
 }
 
+.catalog-header {
+  padding-left: 70px;
+  padding-top: 35px;
+}
+
 .catalog-header-title {
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  width: 495px;
   color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 .breadcrumbs {
   color: #ffffff;
+  display: flex;
+  margin: 8px 0 0 0;
+  padding: 0;
+  gap: 10px;
 }
 
 .breadcrumbs-link {
   color: inherit;
+}
+
+.catalog-products {
+  width: 1060px;
+  display: flex;
 }
 
 .catalog-filter-title {
