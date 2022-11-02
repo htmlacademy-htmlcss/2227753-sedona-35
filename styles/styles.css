@@ -170,11 +170,25 @@ body {
 }
 
 .advantages-item {
+  width: 400px;
+  min-height: 384px;
+  margin: 0;
+  padding: 0;
   flex: 1 0 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: stretch;
 }
 
-.advantages-with-picture {
-  flex: 1 0 100%;
+.picture-for-advantages {
+  flex: 1 0 60%;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .advantages-with-picture, .advantages-with-picture .advantages-title {
@@ -337,8 +351,6 @@ body {
   padding: 50px 70px 0 70px;
   margin-bottom: 40px;
 }
-
-
 
 .hotels-found-list {
   background-color: #FFFFFF;
@@ -562,6 +574,12 @@ ol, ul, menu {
   font-weight: 700;
   font-size: 20px;
   margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pagination-more {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
