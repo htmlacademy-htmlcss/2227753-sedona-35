@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
-    <div class="container">
     <header class="page-header">
       <a class="site-logo" href="index.html"><img class="logo" src="images/header/logo-sedona.svg" alt="Логотип гостиницы Седона" width="140" height="70"></a>
       <nav class="navigation">
@@ -57,7 +56,9 @@
           <li class="advantages-item advantages-with-picture">
               <h3 class="advantages-title">Настоящий городок</h3>
               <p class="advantages-description">Седона — не аттракцион для<br> туристов, там течёт своя жизнь</p>
-              <img class="advantages-picture" src="images/photo-1.jpg" alt="Городок Седона" width="800" height="384">
+          </li>
+          <li class="picture-for-advantages">
+            <img class="advantages-picture" src="images/photo-1.jpg" alt="Городок Седона" width="800" height="384">
           </li>
           <li class="advantages-item advantages-without-picture">
               <h3 class="advantages-title">Небольшая площадь</h3>
@@ -71,10 +72,12 @@
               <h3 class="advantages-title">Мало туристов</h3>
               <p class="advantages-description">Большинство едет в Гранд<br> Каньон и толпится там</p>
           </li>
+          <li class="picture-for-advantages">
+            <img class="advantages-picture" src="images/photo-2.jpg" alt="Мост Дьявола" width="800" height="384">
+          </li>
           <li class="advantages-item advantages-with-picture">
               <h3 class="advantages-title">Там есть мост дьявола</h3>
               <p class="advantages-description">Да, по нему можно пройти!<br> Если вы осмелитесь,<br> разумеется</p>
-              <img class="advantages-picture" src="images/photo-2.jpg" alt="Мост Дьявола" width="800" height="384">
           </li>
           <li class="advantages-item advantages-without-picture">
               <img class="advantages-logo" src="images/hotels.svg" alt="Жильё" width="75" height="72">
@@ -104,7 +107,7 @@
         <h2 class="section-title"><label for="newsletter-email">Подпишитесь на рассылку</label></h2>
         <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" type="email" name="user-email" id="newsletter-email" placeholder="Ваш e-mail" required>
+          <input class="newsletter-field" type="email" name="user-email" id="newsletter-email" placeholder="Ваш e-mail" required>
           <button class="button newsletter-button" type="submit">
             <span class="subscribe">Подписаться</span>
           </button>
@@ -148,6 +151,5 @@
       </section>
       </div>
     </footer>
-    </div>
   </body>
 </html>

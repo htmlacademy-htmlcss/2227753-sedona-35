@@ -6,42 +6,41 @@
     <link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
-  <div class="container">
-  <header class="page-header">
-    <a href="index.html"><img class="logo" src="images/header/logo-sedona.svg" alt="Логотип гостиницы Седона" width="140" height="70"></a>
-    <nav class="navigation">
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link" href="index.html">Главная</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link">О Седоне</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link navigation-link-current">Гостиницы</a>
-        </li>
-      </ul>
-    </nav>
-    <menu class="menu-list">
-         <li class="menu-item">
-          <a class="menu-link" href="#">
-            <img class="menu-image" src="images/header/search.svg" alt="Поиск" width="20" height="20">
-            <span class="visually-hidden">Поиск</span>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a class="menu-link" href="#">
-            <img class="menu-image" src="images/header/favourites.svg" alt="Избранное" width="20" height="20">
-            <span class="visually-hidden">Избранное</span>
-          </a>
-        </li>
-        <li class="menu-item">
-          <a class="button menu-link" href="#">
-            Хочу сюда!
-          </a>
-        </li>
-    </menu>
-  </header>
+    <header class="page-header">
+      <a class="site-logo" href="index.html"><img class="logo" src="images/header/logo-sedona.svg" alt="Логотип гостиницы Седона" width="140" height="70"></a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link" href="index.html">Главная</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link">О Седоне</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
+      <menu class="menu-list">
+           <li class="menu-item">
+            <a class="menu-link" href="#">
+              <img class="menu-image" src="images/header/search.svg" alt="Поиск" width="20" height="20">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-link" href="#">
+              <img class="menu-image" src="images/header/favourites.svg" alt="Избранное" width="20" height="20">
+              <span class="visually-hidden">Избранное</span>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="button menu-link" href="#">
+              Хочу сюда!
+            </a>
+          </li>
+      </menu>
+    </header>
   <main class="main-container main-catalog">
     <div class="background-for-catalog">
       <header class="catalog-header">
@@ -150,7 +149,7 @@
         <span class="hotel-card-type">Гостиница</span>
         <span class="hotel-card-price">От 4000 ₽</span>
         <a class="button more-about-button" href="#">Подробнее</a>
-        <button class="button add-to-favourites" name="add">В избранное</button>
+        <button type="button" class="button add-to-favourites" name="add">В избранное</button>
         <img src="images/catalog/four-stars.svg" class="hotel-stars" alt="Четыре звезды" widh="90" height="17">
         <a class="button rating-button" href="#">
           <span class="rating-description">Рейтинг: 8,5</span>
@@ -164,7 +163,7 @@
           <span class="hotel-card-type">Гостиница</span>
           <span class="hotel-card-price">От 5000 ₽</span>
           <a class="button more-about-button" href="#">Подробнее</a>
-          <button class="button add-to-favourites" name="add">В избранное</button>
+          <button type="button" class="button add-to-favourites" name="add">В избранное</button>
           <img src="images/catalog/four-stars.svg" class="hotel-stars" alt="Четыре звезды" widh="90" height="17">
           <a class="button rating-button" href="#">
             <span class="rating-description">Рейтинг: 9,2</span>
@@ -178,7 +177,7 @@
           <span class="hotel-card-type">Гостиница</span>
           <span class="hotel-card-price">От 2500 ₽</span>
           <a class="button more-about-button" href="#">Подробнее</a>
-          <button class="button add-to-favourites" name="add">В избранное</button>
+          <button type="button" class="button add-to-favourites" name="add">В избранное</button>
           <img src="images/catalog/three-stars.svg" class="hotel-stars" alt="Три звезды" width="66" height="17">
           <a class="button rating-button" href="#">
             <span class="rating-description">Рейтинг: 6,9</span>
@@ -192,7 +191,7 @@
           <span class="hotel-card-type">Гостиница</span>
           <span class="hotel-card-price">От 1500 ₽</span>
           <a class="button more-about-button" href="#">Подробнее</a>
-          <button class="button add-to-favourites" name="add" type="button">В избранное</button>
+          <button type="button" class="button add-to-favourites" name="add" type="button">В избранное</button>
           <img src="images/catalog/two-stars.svg" class="hotel-stars" alt="Две звезды" width="42" height="17">
           <a class="button rating-button" href="#">
             <span class="rating-description">Рейтинг: 5,0</span>
@@ -213,7 +212,7 @@
           <a class="pagination-link" href="#">4</a>
         </li>
         <li class="pagination-item">
-          <a>...</a>
+          <a class="pagination-more">...</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">10</a>
@@ -226,7 +225,7 @@
       <h2 class="section-title" style="color: #000000"><label for="newsletter-email">Подпишитесь на рассылку</label></h2>
       <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
       <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-        <input class="field" type="email" name="user-email" id="newsletter-email" placeholder="Ваш e-mail" required>
+        <input class="newsletter-field" type="email" name="user-email" id="newsletter-email" placeholder="Ваш e-mail" required>
         <button class="button newsletter-button" type="submit">
           <span class="subscribe">Подписаться</span>
         </button>
@@ -270,6 +269,5 @@
     </section>
     </div>
   </footer>
-  </div>
 </body>
 </html>
