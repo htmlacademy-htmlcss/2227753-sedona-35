@@ -263,7 +263,7 @@ ol, ul, menu {
   background-image: url("../images/footer/Subscribe.jpg");
   background-color: rgba(131, 179, 211, 0.2);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .newsletter .section-title {
@@ -445,13 +445,11 @@ ol, ul, menu {
 }
 
 .hotels-list {
-  width: 1060px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+  justify-content: center;
   margin-bottom: 80px;
-  padding: 0;
 }
 
 .hotel-card {
@@ -466,6 +464,7 @@ ol, ul, menu {
   row-gap: 16px;
   padding: 20px;
 }
+
 .hotel-card-link {
   grid-row: 1 / 3;
   grid-column: 1 / 3;
