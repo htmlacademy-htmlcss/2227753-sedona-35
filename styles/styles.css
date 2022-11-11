@@ -16,11 +16,12 @@
 
 html {
   height: 100%;
+  background-color: #F2F2F2;
 }
 
 body {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -28,7 +29,19 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #FFFFFF;
+}
+
+img {
+  display: block;
+  padding: 0;
+  max-width: 100%;
+}
+
+ol, ul, menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .page-header {
@@ -39,8 +52,8 @@ body {
   height: 64px;
   align-items: center;
   margin: 0 auto;
-  /* position: relative;
-  z-index: 2; */
+  position: relative;
+  z-index: 2;
 }
 
 .site-logo {
@@ -163,6 +176,8 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+
+  /* Нужно ли, чтобы при переполнении одного блока текстом фон соседних блоков вытягивался по размеру? Как это реализовать? */
 }
 
 .advantages-title {
@@ -178,8 +193,6 @@ body {
 .advantages-item {
   width: 400px;
   min-height: 384px;
-  margin: 0;
-  padding: 0;
   flex: 1 0 30%;
   display: flex;
   flex-direction: column;
@@ -187,14 +200,23 @@ body {
   align-content: stretch;
 }
 
-.picture-for-advantages {
-  flex: 1 0 60%;
+.advantages-with-picture {
+  flex-basis: 100%;
+  flex-direction: row;
 }
 
-img {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
+.advantages-text {
+  flex: 1 0 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advantages-picture {
+  flex: 1 0 60%;
+
+  /* Нужно ли, чтобы картинка растягивалась вместе с блоком с текстом при переполнении? */
+  /* height: auto; */
 }
 
 .advantages-with-picture, .advantages-with-picture .advantages-title {
@@ -208,6 +230,10 @@ img {
 
 .advantages-without-picture-odd {
   background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-logo {
+  margin: 0 auto;
 }
 
 .are-you-interested {
@@ -240,7 +266,7 @@ img {
   background-image: url("../images/footer/Subscribe.jpg");
   background-color: rgba(131, 179, 211, 0.2);
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
 }
 
 .newsletter .section-title {
@@ -261,7 +287,6 @@ img {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: 52px;
   background: #F2F2F2;
   border: none;
   border-radius: 4px 0px 0px 4px;
@@ -412,8 +437,7 @@ img {
   font-size: 18px;
   line-height: 21px;
   color: #333333;
-  background-color: #ffffff
-  margin-right: 70px;
+  background-color: #ffffff;
 }
 
 .view-buttons-container {
@@ -424,13 +448,11 @@ img {
 }
 
 .hotels-list {
-  width: 1060px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: stretch;
-  margin: 0 70px;
-  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 340px);
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 80px;
 }
 
 .hotel-card {
@@ -438,22 +460,26 @@ img {
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   box-sizing: border-box;
-  width: 340px;
-  height: 440px;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 0 20px 0;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
   padding: 20px;
-  justify-content: space-between;
   align-items: center;
 }
 
+.hotel-card-link {
+  grid-column: 1 / -1;
+}
+
 .hotel-card-title {
+  display: block;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   color: #000000;
-  margin: 16px 0;
+  margin: 0;
+  margin-top: 16px;
 }
 
 .hotel-card-type {
@@ -462,7 +488,7 @@ img {
   font-size: 18px;
   line-height: 21px;
   width: 140px;
-  margin-bottom: 16px;
+  overflow-wrap: break-word;
 }
 
 .hotel-card-price {
@@ -472,11 +498,12 @@ img {
   color: #333333;
   text-align: right;
   width: 140px;
-  margin-bottom: 16px;
+  overflow-wrap: break-word;
 }
 
 .hotel-stars {
-  margin-top: 16px;
+  justify-self: start;
+  align-self: center;
 }
 
 .button {
@@ -489,7 +516,7 @@ img {
   justify-content: center;
   align-items: center;
   width: 160px;
-  height: 36px;
+  min-height: 36px;
   background: #756157;
   border-radius: 4px;
   border-color: transparent;
@@ -504,7 +531,7 @@ img {
 .newsletter-button {
   box-sizing: border-box;
   width: 232px;
-  height: 52px;
+  min-height: 52px;
   background: #82B3D3;
   border-radius: 0px 4px 4px 0px;
   display: block;
@@ -571,7 +598,6 @@ img {
   width: 140px;
   height: 37px;
   background: #F2F2F2;
-  margin-top: 16px;
 }
 
 .social-button {
@@ -583,13 +609,9 @@ img {
   background-color: #ffffff;
   display: flex;
   padding: 0;
-  margin: 40px 0 0 70px;
+  margin-left: 70px;
   gap: 8px;
   padding-bottom: 60px;
-}
-
-ol, ul, menu {
-  list-style-type: none;
 }
 
 .pagination-item {
