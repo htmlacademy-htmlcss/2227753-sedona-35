@@ -16,11 +16,12 @@
 
 html {
   height: 100%;
+  background-color: #F2F2F2;
 }
 
 body {
   margin: 0 auto;
-  width: 1200px;
+  max-width: 1200px;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -28,7 +29,20 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #FFFFFF;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+}
+
+ol, ul, menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 .page-header {
@@ -39,8 +53,8 @@ body {
   height: 64px;
   align-items: center;
   margin: 0 auto;
-  /* position: relative;
-  z-index: 2; */
+  position: relative;
+  z-index: 2;
 }
 
 .site-logo {
@@ -163,6 +177,8 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+
+  /* Нужно ли, чтобы при переполнении одного блока текстом фон соседних блоков вытягивался по размеру? Как это реализовать? */
 }
 
 .advantages-title {
@@ -178,8 +194,6 @@ body {
 .advantages-item {
   width: 400px;
   min-height: 384px;
-  margin: 0;
-  padding: 0;
   flex: 1 0 30%;
   display: flex;
   flex-direction: column;
@@ -187,14 +201,23 @@ body {
   align-content: stretch;
 }
 
-.picture-for-advantages {
-  flex: 1 0 60%;
+.advantages-with-picture {
+  flex-basis: 100%;
+  flex-direction: row;
 }
 
-img {
-  display: block;
-  margin: 0 auto;
-  padding: 0;
+.advantages-text {
+  flex: 1 0 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.advantages-picture {
+  flex: 1 0 60%;
+
+  /* Нужно ли, чтобы картинка растягивалась вместе с блоком с текстом при переполнении? */
+  /* height: auto; */
 }
 
 .advantages-with-picture, .advantages-with-picture .advantages-title {
@@ -261,7 +284,6 @@ img {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  height: 52px;
   background: #F2F2F2;
   border: none;
   border-radius: 4px 0px 0px 4px;
@@ -428,7 +450,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: stretch;
-  margin: 0 70px;
+  margin-bottom: 80px;
   padding: 0;
 }
 
@@ -438,8 +460,6 @@ img {
   border-radius: 4px;
   box-sizing: border-box;
   width: 340px;
-  height: 440px;
-  margin: 0 0 20px 0;
   display: grid;
   grid-template-columns: 150px 150px;
   grid-template-rows: 212px 28px 21px 36px 37px;
@@ -497,7 +517,7 @@ img {
   justify-content: center;
   align-items: center;
   width: 160px;
-  height: 36px;
+  min-height: 36px;
   background: #756157;
   border-radius: 4px;
   border-color: transparent;
@@ -512,7 +532,7 @@ img {
 .newsletter-button {
   box-sizing: border-box;
   width: 232px;
-  height: 52px;
+  min-height: 52px;
   background: #82B3D3;
   border-radius: 0px 4px 4px 0px;
   display: block;
@@ -596,13 +616,9 @@ img {
   background-color: #ffffff;
   display: flex;
   padding: 0;
-  margin: 40px 0 0 70px;
+  margin-left: 70px;
   gap: 8px;
   padding-bottom: 60px;
-}
-
-ol, ul, menu {
-  list-style-type: none;
 }
 
 .pagination-item {
