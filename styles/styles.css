@@ -34,7 +34,6 @@ body {
 
 img {
   display: block;
-  margin: 0 auto;
   padding: 0;
   max-width: 100%;
 }
@@ -231,6 +230,10 @@ ol, ul, menu {
 
 .advantages-without-picture-odd {
   background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-logo {
+  margin: 0 auto;
 }
 
 .are-you-interested {
@@ -457,17 +460,16 @@ ol, ul, menu {
   border: 1px solid #E6E6E6;
   border-radius: 4px;
   box-sizing: border-box;
-  width: 340px;
+  width: 100%;
   display: grid;
-  grid-template-columns: 150px 150px;
-  grid-template-rows: 212px 28px 21px 36px 37px;
-  row-gap: 16px;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 20px;
   padding: 20px;
+  align-items: center;
 }
 
 .hotel-card-link {
-  grid-row: 1 / 3;
-  grid-column: 1 / 3;
+  grid-column: 1 / -1;
 }
 
 .hotel-card-title {
@@ -486,8 +488,7 @@ ol, ul, menu {
   font-size: 18px;
   line-height: 21px;
   width: 140px;
-  grid-row: 3 / 4;
-  grid-column: 1 / 2;
+  overflow-wrap: break-word;
 }
 
 .hotel-card-price {
@@ -497,13 +498,12 @@ ol, ul, menu {
   color: #333333;
   text-align: right;
   width: 140px;
-  grid-row: 3 / 4;
-  grid-column: 2 / 3;
+  overflow-wrap: break-word;
 }
 
 .hotel-stars {
-  grid-row: 5 / 6;
-  grid-column: 1 / 2;
+  justify-self: start;
+  align-self: center;
 }
 
 .button {
@@ -578,16 +578,12 @@ ol, ul, menu {
 .more-about-button {
   text-decoration: none;
   width: 140px;
-  grid-row: 4 / 5;
-  grid-column: 1 / 2;
 }
 
 .add-to-favourites {
   width: 140px;
   background: #82B3D3;
   text-decoration: none;
-  grid-row: 4 / 5;
-  grid-column: 2 / 3;
 }
 
 .rating-description {
@@ -602,8 +598,6 @@ ol, ul, menu {
   width: 140px;
   height: 37px;
   background: #F2F2F2;
-  grid-row: 5 / 6;
-  grid-column: 2 / 3;
 }
 
 .social-button {
