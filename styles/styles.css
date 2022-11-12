@@ -551,7 +551,7 @@ menu {
 
 .search-hotel-button {
   width: 376px;
-  height: 52px;
+  min-height: 52px;
 }
 
 .newsletter-button {
@@ -616,7 +616,7 @@ menu {
 .rating-button {
   text-decoration: none;
   width: 140px;
-  height: 37px;
+  min-height: 37px;
   background: #f2f2f2;
 }
 
