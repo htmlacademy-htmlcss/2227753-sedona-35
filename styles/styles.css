@@ -144,6 +144,7 @@ menu {
 
 .intro_image {
   display: flex;
+  height: 100%;
   margin: 0 auto;
   padding: 51px 0 82px 0;
 }
@@ -547,6 +548,7 @@ menu {
   border-radius: 4px;
   border-color: transparent;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .search-hotel-button {
@@ -636,29 +638,26 @@ menu {
 
 .pagination-item {
   width: 60px;
-  height: 60px;
+  min-height: 60px;
   background: #82b3d3;
   border-radius: 4px;
-  text-align: center;
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination-link {
   color: #ffffff;
   text-decoration: none;
+  width: 100%;
+  min-height: 100%;
   line-height: 36px;
   font-weight: 700;
   font-size: 20px;
   margin: 0;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.pagination-more {
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .pagination-item:nth-child(5) {
@@ -669,6 +668,7 @@ menu {
 .pagination-current .pagination-link {
   color: #000000;
   background-color: #f2f2f2;
+  cursor: default;
 }
 
 .visually-hidden {
