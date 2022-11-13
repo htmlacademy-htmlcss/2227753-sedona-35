@@ -133,11 +133,11 @@ menu {
 }
 
 .welcome-to-sedona {
-  background-image: url("../images/index-background.jpg");
   background-color: #000000;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  background-image: url("../images/background-wave.svg"), url("../images/index-background.jpg");
+  background-repeat: no-repeat no-repeat;
+  background-position: bottom center;
+  background-size: contain cover;
   margin: 0;
   padding: 0;
 }
@@ -163,11 +163,7 @@ menu {
 .advantages-opening {
   background-color: #ffffff;
   margin: 0;
-  padding: 0;
-}
-
-.advantages-opening .section-title {
-  padding-top: 69px;
+  padding: 69px 0 90px;
 }
 
 .advantages-opening p {
@@ -177,7 +173,7 @@ menu {
   text-align: center;
   color: #333333;
   margin: 0;
-  padding: 25px 0 90px 0;
+  padding-top: 25px;
 }
 
 .advantages {
