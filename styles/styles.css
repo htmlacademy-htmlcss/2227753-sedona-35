@@ -500,6 +500,14 @@ menu {
   margin-left: 70px;
 }
 
+.catalog-filter-item:hover {
+  opacity: 0.6;
+}
+
+.catalog-filter-item:active {
+  opacity: 0.3;
+}
+
 .filter-buttons {
   display: flex;
   flex-direction: column;
