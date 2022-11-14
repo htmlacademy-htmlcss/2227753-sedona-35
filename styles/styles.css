@@ -398,6 +398,7 @@ menu {
 
 .footer-phone-number:hover,
 .footer-phone-number:focus {
+  outline: none;
   color: #756157;
 }
 
@@ -608,6 +609,7 @@ menu {
 
 .button:hover,
 .button:focus {
+  outline: none;
   background-color: #615048;
 }
 
@@ -657,6 +659,7 @@ menu {
 }
 
 .reset-button:focus {
+  outline: none;
   background: transparent;
   border: 3px solid #83b3d3;
   border-radius: 4px;
@@ -676,9 +679,25 @@ menu {
   gap: 10px;
   width: 48px;
   height: 48px;
-  border: 2px solid #000000;
+  border: 2px solid #e5e5e5;
   border-radius: 4px;
   background-color: #ffffff;
+}
+
+.view-button:hover {
+  background-color: #ffffff;
+  border: 2px solid #000000;
+}
+
+.view-button:focus {
+  outline: none;
+  background-color: #ffffff;
+  border: 2px solid #68a2ca;
+}
+
+.view-button:active {
+  background-color: #ffffff;
+  border: 2px solid #000000;
 }
 
 .more-about-button {
@@ -692,6 +711,7 @@ menu {
 .newsletter-button:focus,
 .apply-button:focus,
 .add-to-favourites:focus {
+  outline: none;
   background-color: #68a2ca;
 }
 
@@ -709,7 +729,10 @@ menu {
   color: #333333;
 }
 
-.rating-button {
+.rating-button,
+.rating-button:hover,
+.rating-button:focus,
+.rating-button:active {
   text-decoration: none;
   width: 140px;
   min-height: 37px;
@@ -728,6 +751,7 @@ menu {
 
 .copyright-button:hover,
 .copyright-button:focus {
+  outline: none;
   color: #756157;
 }
 
@@ -737,6 +761,7 @@ menu {
 
 .social-button:hover,
 .social-button:focus {
+  outline: none;
   color: #68a2ca;
 }
 
@@ -753,8 +778,6 @@ menu {
 .pagination-item {
   width: 60px;
   min-height: 60px;
-  background: #82b3d3;
-  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -768,21 +791,34 @@ menu {
   line-height: 36px;
   font-weight: 700;
   font-size: 20px;
+  background: #82b3d3;
+  border-radius: 4px;
   margin: 0;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.pagination-link:hover,
+.pagination-link:focus {
+  outline: none;
+  background-color: #68a2ca;
+  border: 1px solid #82b3d3;
+}
+
+.pagination-link:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .pagination-item:nth-child(5) {
   background: transparent;
 }
 
-.pagination-current,
-.pagination-current .pagination-link {
+.pagination-link.pagination-current {
   color: #000000;
   background-color: #f2f2f2;
   cursor: default;
+  border: none;
 }
 
 .visually-hidden {
