@@ -360,6 +360,7 @@ menu {
 .footer-social-list {
   width: 142px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   margin: 0;
   padding: 0;
@@ -654,6 +655,16 @@ menu {
 .social-button {
   width: 47px;
   height: 40px;
+  color: #83b3d3;
+}
+
+.social-button:hover,
+.social-button:focus {
+  color: #68a2ca;
+}
+
+.social-button:active {
+  color: rgba(104, 162, 202, 0.3);
 }
 
 .pagination {
