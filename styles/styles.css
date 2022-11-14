@@ -95,8 +95,9 @@ menu {
   justify-content: end;
 }
 
-.menu-list li {
+.menu-item {
   height: 100%;
+  position: relative;
 }
 
 .menu-item:last-child {
@@ -126,6 +127,24 @@ menu {
   text-decoration: none;
   min-height: 64px;
   align-items: center;
+  justify-content: center;
+}
+
+.menu-item:nth-of-type(2)::after {
+  content: "12";
+  color: #ffffff;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #7db54f;
+  top: 11px;
+  left: 9px;
 }
 
 .main-container {
