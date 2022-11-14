@@ -381,6 +381,15 @@ menu {
   color: #000000;
 }
 
+.footer-phone-number:hover,
+.footer-phone-number:focus {
+  color: #756157;
+}
+
+.footer-phone-number:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
 .background-for-catalog {
   background-image: url("../images/catalog/filter-background.jpg");
   background-color: rgba(131, 179, 211, 0.2);
@@ -656,6 +665,19 @@ menu {
   width: 47px;
   height: 40px;
   color: #83b3d3;
+}
+
+.copyright-button {
+  color: #000000;
+}
+
+.copyright-button:hover,
+.copyright-button:focus {
+  color: #756157;
+}
+
+.copyright-button:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .social-button:hover,
