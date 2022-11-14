@@ -482,12 +482,11 @@ menu {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding: 50px 70px 0 70px;
-  margin-bottom: 40px;
 }
 
 .hotels-found-list {
   background-color: #ffffff;
+  padding: 50px 70px 60px;
 }
 
 .hotels-found-title {
@@ -530,7 +529,9 @@ menu {
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
   justify-content: center;
-  margin-bottom: 80px;
+  padding: 40px 0 40px;
+  margin-bottom: 40px;
+  border-bottom: solid 1px #e6e6e6;
 }
 
 .hotel-card {
@@ -746,10 +747,7 @@ menu {
 .pagination {
   background-color: #ffffff;
   display: flex;
-  padding: 0;
-  margin-left: 70px;
   gap: 8px;
-  padding-bottom: 60px;
 }
 
 .pagination-item {
