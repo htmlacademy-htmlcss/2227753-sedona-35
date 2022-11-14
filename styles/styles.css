@@ -385,10 +385,6 @@ menu {
   padding: 0;
 }
 
-.footer-phone {
-  text-align: center;
-}
-
 .footer-phone-number {
   font-weight: 400;
   font-size: 40px;
@@ -609,6 +605,19 @@ menu {
   cursor: pointer;
 }
 
+.button:hover,
+.button:focus {
+  background-color: #615048;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button:disabled {
+  background-color: #e5e5e5;
+}
+
 .search-hotel-button {
   width: 376px;
   min-height: 52px;
@@ -635,8 +644,24 @@ menu {
 }
 
 .reset-button {
+  color: #ffffff;
   width: 191px;
   background: transparent;
+  border: none;
+}
+
+.reset-button:hover {
+  background: transparent;
+  opacity: 0.6;
+}
+
+.reset-button:focus {
+  background: transparent;
+  border: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.reset-button:active {
   border: none;
 }
 
@@ -659,6 +684,16 @@ menu {
   text-decoration: none;
   width: 140px;
 }
+
+.newsletter-button:hover,
+.apply-button:hover,
+.add-to-favourites:hover,
+.newsletter-button:focus,
+.apply-button:focus,
+.add-to-favourites:focus {
+  background-color: #68a2ca;
+}
+
 
 .add-to-favourites {
   width: 140px;
