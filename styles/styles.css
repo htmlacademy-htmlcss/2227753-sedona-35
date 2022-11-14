@@ -135,9 +135,9 @@ menu {
 .welcome-to-sedona {
   background-color: #000000;
   background-image: url("../images/background-wave.svg"), url("../images/index-background.jpg");
-  background-repeat: no-repeat no-repeat;
-  background-position: bottom center;
-  background-size: contain cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom, center;
+  background-size: 100% auto, cover;
   margin: 0;
   padding: 0;
 }
