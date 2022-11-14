@@ -629,14 +629,7 @@ menu {
 .range-slider {
   margin: 0;
   width: 100%;
-  background-image:
-    linear-gradient(
-      to right,
-      rgba(#ffffff, 0.3) var(--first-val),
-      #ffffff var(--first-val),
-      #ffffff var(--second-val),
-      rgba(#ffffff, 0.3) var(--second-val)
-    );
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.3) var(--first-val), #ffffff var(--first-val), #ffffff var(--second-val), rgba(255, 255, 255, 0.3) var(--second-val));
   background-size: 100% 4px;
   background-repeat: no-repeat;
   background-position: center;
@@ -652,6 +645,18 @@ menu {
   height: 100%;
   appearance: none;
   background-color: transparent;
+}
+
+.range-slider-input::-webkit-slider-thumb {
+  background-color: #ffffff;
+  border: none;
+  /* get rid of Firefox thumb border */
+  border-radius: 5px;
+  pointer-events: auto;
+  /* catch clicks */
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
 }
 
 .view-buttons-container {
