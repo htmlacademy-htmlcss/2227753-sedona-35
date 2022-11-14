@@ -368,6 +368,10 @@ menu {
   padding-left: 20px;
 }
 
+.newsletter-field:focus {
+  outline: none;
+}
+
 .footer-contacts {
   background-color: #ffffff;
   display: flex;
@@ -432,7 +436,8 @@ menu {
 .breadcrumbs {
   color: #ffffff;
   display: flex;
-  margin: 8px 0 0 0;
+  align-items: center;
+  margin-top: 8px;
   padding: 0;
   gap: 10px;
 }
@@ -478,6 +483,7 @@ menu {
   height: 49px;
   font-size: 18px;
   line-height: 21px;
+  width: 1060px;
   color: #333333;
   background-color: #ffffff;
   display: flex;
@@ -516,6 +522,20 @@ menu {
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
+  appearance: none;
+  background-image: url(../images/catalog/selector.svg);
+  background-repeat: no-repeat;
+  background-position: 260px;
+}
+
+.select-control:hover,
+.select-control:focus {
+  outline: none;
+  border: 2px solid #68a2ca;
+}
+
+.select-control:active {
+  border: 2px solid #3f5e72;
 }
 
 .view-buttons-container {
