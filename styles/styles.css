@@ -705,6 +705,18 @@ menu {
   width: 140px;
 }
 
+.add-to-favourites {
+  width: 140px;
+  background: #82b3d3;
+  text-decoration: none;
+}
+
+.in-favourites {
+  width: 140px;
+  background: #7db54f;
+  text-decoration: none;
+}
+
 .newsletter-button:hover,
 .apply-button:hover,
 .add-to-favourites:hover,
@@ -715,11 +727,14 @@ menu {
   background-color: #68a2ca;
 }
 
+.in-favourites:hover,
+.in-favourites:focus {
+  outline: none;
+  background-color: #6c9e42;
+}
 
-.add-to-favourites {
-  width: 140px;
-  background: #82b3d3;
-  text-decoration: none;
+.in-favourites:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .rating-description {
