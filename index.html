@@ -158,5 +158,65 @@
       </section>
       </div>
     </footer>
+    <div class="modal-container modal-container-close">
+      <div class="modal">
+        <h2 class="section-title modal-title">Поиск гостиницы в Седоне</h2>
+        <button class="modal-close-button" type="button">
+          <svg width="15" height="15" fill="currentColor" focusable="False" aria-hidden="true">
+            <use href="images/modal/modal-sprites.svg#close-button"></use>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <div class="modal-search">
+        <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="arr-date">Дата заезда:</label>
+          <input class="dates" type="text" name="arrival-date" id="arr-date" placeholder="27 апреля 2020">
+          <svg width="16" height="15" fill="currentColor" focusable="False">
+            <use href="images/modal/modal-sprites.svg#calendar"></use>
+          </svg>
+          <span class="modal-text red">Мы не можем отправить вас в прошлое.</span>
+        </form>
+        <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="dep-date">Дата выезда:</label>
+          <input class="dates" type="text" name="departure-date" id="dep-date" placeholder="1 сентября 2023">
+          <svg width="16" height="15" fill="currentColor" focusable="False">
+            <use href="images/modal/modal-sprites.svg#calendar"></use>
+          </svg>
+          <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
+        </form>
+        <div class="visitors">
+          <label for="adult">Взрослые:</label>
+          <div class="visitors-number">
+            <button class="button-less" type="button">
+              <svg width="14" height="2" fill="currentColor" focusable="False">
+                <use href="images/modal/modal-sprites.svg#less"></use>
+              </svg>
+            </button>
+            <input class="quantity" id="adult" type="number" placeholder="2">
+            <button class="button-more" type="button">
+              <svg width="14" height="14" fill="currentColor" focusable="False">
+                <use href="images/modal/modal-sprites.svg#more"></use>
+              </svg>
+            </button>
+          </div>
+          <label for="children">Дети:</label>
+          <div class="visitors-number">
+            <button class="button-less" type="button">
+              <svg width="14" height="2" fill="currentColor" focusable="False">
+                <use href="images/modal/modal-sprites.svg#less"></use>
+              </svg>
+            </button>
+            <input class="quantity" id="children" type="number" placeholder="2">
+            <button class="button-more" type="button">
+              <svg width="14" height="14" fill="currentColor" focusable="False">
+                <use href="images/modal/modal-sprites.svg#more"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        <button class="button"></button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
