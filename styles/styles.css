@@ -994,10 +994,6 @@ menu {
   overflow: hidden;
 }
 
-.modal-container-close {
-  display: none;
-}
-
 .modal-container {
   position: fixed;
   top: 0;
@@ -1007,6 +1003,10 @@ menu {
   height: 100%;
   background-color: rgba(242, 242, 242, 0.8);
   z-index: 3;
+}
+
+.modal-container-close {
+  display: none;
 }
 
 .modal {
