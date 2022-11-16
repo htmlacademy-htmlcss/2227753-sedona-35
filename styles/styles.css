@@ -574,6 +574,7 @@ menu {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 70px;
 }
 
 .hotels-found-list {
@@ -587,7 +588,6 @@ menu {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-  margin: 0 200px 0 0;
   padding: 0;
 }
 
@@ -611,6 +611,7 @@ menu {
   background-image: url("../images/catalog/selector.svg");
   background-repeat: no-repeat;
   background-position: 260px;
+  margin-left: auto;
 }
 
 .select-control:hover,
@@ -716,7 +717,6 @@ menu {
 .view-buttons-container {
   display: flex;
   gap: 8px;
-  margin-left: 70px;
   padding: 0;
 }
 

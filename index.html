@@ -167,23 +167,23 @@
           </svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <div class="modal-search">
-        <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="modal-search" method="get" action="https://echo.htmlacademy.ru/">
+        <div class="modal-content">
           <label for="arr-date">Дата заезда:</label>
           <input class="dates" type="text" name="arrival-date" id="arr-date" placeholder="Укажите дату">
           <svg width="16" height="15" fill="currentColor" focusable="False">
             <use href="images/modal/modal-sprites.svg#calendar"></use>
           </svg>
           <span class="modal-text red">Мы не можем отправить вас в прошлое.</span>
-        </form>
-        <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
+        </div>
+        <div class="modal-content">
           <label for="dep-date">Дата выезда:</label>
           <input class="dates" type="text" name="departure-date" id="dep-date" placeholder="Укажите дату">
           <svg width="16" height="15" fill="currentColor" focusable="False">
             <use href="images/modal/modal-sprites.svg#calendar"></use>
           </svg>
           <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
-        </form>
+        </div>
         <div class="visitors">
           <label for="adult">Взрослые:</label>
           <div class="visitors-number">
@@ -192,7 +192,7 @@
                 <use href="images/modal/modal-sprites.svg#less"></use>
               </svg>
             </button>
-            <input class="quantity" id="adult" type="number" placeholder="2">
+            <input class="quantity" id="adult" type="number" name="adult-number" placeholder="2">
             <button class="button-more" type="button">
               <svg width="14" height="14" fill="currentColor" focusable="False">
                 <use href="images/modal/modal-sprites.svg#more"></use>
@@ -209,7 +209,7 @@
                 <use href="images/modal/modal-sprites.svg#less"></use>
               </svg>
             </button>
-            <input class="quantity" id="children" type="number" placeholder="2">
+            <input class="quantity" id="children" type="number" name="children-number" placeholder="2">
             <button class="button-more" type="button">
               <svg width="14" height="14" fill="currentColor" focusable="False">
                 <use href="images/modal/modal-sprites.svg#more"></use>
@@ -218,7 +218,7 @@
           </div>
         </div>
         <button class="button modal-button">Найти</button>
-        </div>
+      </form>
       </div>
     </div>
   </body>
