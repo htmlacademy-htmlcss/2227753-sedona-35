@@ -516,10 +516,52 @@ menu {
 }
 
 .control {
+  display: block;
+  position: relative;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control-radio {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url(../images/catalog/checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"]:checked + .control-radio {
+  background-image: url(../images/catalog/radio.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input:focus + .control-mark {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.control-input:focus + .control-radio {
+  outline: 3px solid #83b3d3;
 }
 
 .sorting-container {
@@ -1006,7 +1048,7 @@ menu {
 }
 
 .modal-container-close {
-  display: block;
+  display: none;
 }
 
 .modal {
