@@ -1006,7 +1006,7 @@ menu {
 }
 
 .modal-container-close {
-  display: none;
+  display: block;
 }
 
 .modal {
@@ -1047,6 +1047,20 @@ menu {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  border: 3px solid #83b3d3;
+}
+
+.modal-close-button:active {
+  background-color: #e6e6e6;
+  color: rgba(0, 0, 0, 0.3);
+  border: none;
 }
 
 .modal-content {
@@ -1115,6 +1129,7 @@ menu {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .visitors-number {
@@ -1131,8 +1146,13 @@ menu {
   border: none;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
+}
+
+.quantity:focus {
+  outline: none;
 }
 
 .quantity::-webkit-inner-spin-button,
@@ -1161,6 +1181,34 @@ menu {
   color: rgba(117, 97, 87, 0.3);
 }
 
+.button-less:hover svg,
+.button-more:hover svg {
+  color: #000000;
+}
+
+.button-less:focus-within,
+.button-more:focus-within {
+  outline: none;
+  border: 3px solid #82b3d3;
+  border-radius: 4px;
+}
+
+.button-less:focus svg,
+.button-more:focus svg {
+  color: #000000;
+}
+
+.button-less:active,
+.button-more:active {
+  outline: none;
+  border: none;
+}
+
+.button-less:active svg,
+.button-more:active svg {
+  color: rgba(117, 97, 87, 0.2);
+}
+
 .modal-button {
   width: 100%;
   min-height: 60px;
@@ -1178,5 +1226,48 @@ menu {
 .modal-button:active {
   outline: none;
   background-color: #68a2ca;
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.tooltip {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  right: 147px;
+  background-color: #83b3d3;
+  border-radius: 50%;
+  background-image: url("../images/modal/tooltip.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tooltip-text {
+  display: none;
+  box-sizing: border-box;
+  position: absolute;
+  left: -114px;
+  top: 32px;
+  width: 256px;
+  min-height: 152px;
+  padding-top: 30px;
+  padding-left: 22px;
+  padding-right: 18px;
+  padding-bottom: 18px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-image: url("../images/modal/tooltip-background.png");
+  background-size: cover;
+}
+
+.tooltip:hover {
+  background-color: rgba(131, 179, 211, 0.8);
+}
+
+.tooltip:hover .tooltip-text,
+.tooltip:focus .tooltip-text {
+  display: block;
 }
