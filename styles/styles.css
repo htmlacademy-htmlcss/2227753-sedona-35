@@ -544,13 +544,13 @@ menu {
 }
 
 .control-input[type="checkbox"]:checked + .control-mark {
-  background-image: url(../images/catalog/checked.svg);
+  background-image: url("../images/catalog/checked.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .control-input[type="radio"]:checked + .control-radio {
-  background-image: url(../images/catalog/radio.svg);
+  background-image: url("../images/catalog/radio.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -562,6 +562,14 @@ menu {
 
 .control-input:focus + .control-radio {
   outline: 3px solid #83b3d3;
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 0.3;
+}
+
+.control-input:disabled + .control-radio {
+  opacity: 0.3;
 }
 
 .sorting-container {
@@ -614,14 +622,20 @@ menu {
   margin-left: auto;
 }
 
-.select-control:hover,
+.select-control:not(:disabled):hover,
 .select-control:focus {
   outline: none;
-  border: 2px solid #68a2ca;
+  border-color: #68a2ca;
 }
 
-.select-control:active {
-  border: 2px solid #3f5e72;
+.select-control:not(:disabled):active {
+  border-color: #3f5e72;
+}
+
+.select-control:disabled {
+  color: #000000;
+  border-color: #000000;
+  opacity: 0.3;
 }
 
 .cost {
