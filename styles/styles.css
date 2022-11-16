@@ -704,7 +704,13 @@ menu {
   pointer-events: auto;
   width: 20px;
   height: 20px;
-  -webkit-appearance: none;
+  appearance: none;
+}
+
+.cost-input::-webkit-outer-spin-button,
+.cost-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .view-buttons-container {
