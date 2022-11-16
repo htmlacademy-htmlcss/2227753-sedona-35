@@ -339,6 +339,12 @@ menu {
 .newsletter .section-title {
   color: #ffffff;
   padding-top: 96px;
+  margin-bottom: 20px;
+}
+
+.newsletter p {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .catalog-newsletter .section-title {
@@ -347,7 +353,7 @@ menu {
 
 .newsletter-form {
   max-width: 684px;
-  padding: 32px 0 104px 0;
+  padding: 54px 0 104px 0;
   display: flex;
   margin: 0 auto;
 }
@@ -516,10 +522,60 @@ menu {
 }
 
 .control {
+  display: block;
+  position: relative;
   font-weight: 400;
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
+  padding-left: 36px;
+}
+
+.control-mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.control-radio {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark {
+  background-image: url("../images/catalog/checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input[type="radio"]:checked + .control-radio {
+  background-image: url("../images/catalog/radio.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.control-input:focus + .control-mark {
+  outline: 3px solid #83b3d3;
+  border-radius: 4px;
+}
+
+.control-input:focus + .control-radio {
+  outline: 3px solid #83b3d3;
+}
+
+.control-input:disabled + .control-mark {
+  opacity: 0.3;
+}
+
+.control-input:disabled + .control-radio {
+  opacity: 0.3;
 }
 
 .sorting-container {
@@ -532,6 +588,7 @@ menu {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  gap: 70px;
 }
 
 .hotels-found-list {
@@ -545,7 +602,6 @@ menu {
   line-height: 36px;
   color: #000000;
   text-transform: uppercase;
-  margin: 0 200px 0 0;
   padding: 0;
 }
 
@@ -569,16 +625,23 @@ menu {
   background-image: url("../images/catalog/selector.svg");
   background-repeat: no-repeat;
   background-position: 260px;
+  margin-left: auto;
 }
 
-.select-control:hover,
+.select-control:not(:disabled):hover,
 .select-control:focus {
   outline: none;
-  border: 2px solid #68a2ca;
+  border-color: #68a2ca;
 }
 
-.select-control:active {
-  border: 2px solid #3f5e72;
+.select-control:not(:disabled):active {
+  border-color: #3f5e72;
+}
+
+.select-control:disabled {
+  color: #000000;
+  border-color: #000000;
+  opacity: 0.3;
 }
 
 .cost {
@@ -603,9 +666,10 @@ menu {
   grid-template-columns: 1fr auto;
   border-radius: 4px 0 0 4px;
   background-color: #f2f2f2;
-  padding: 12px 20px;
+  padding: 10px 18px;
   box-sizing: border-box;
   color: rgba(0, 0, 0, 0.3);
+  border: 2px solid transparent;
 }
 
 .cost-label:hover {
@@ -617,7 +681,7 @@ menu {
 }
 
 .cost-label:active {
-  outline: 2px solid #000000;
+  border-color: #000000;
 }
 
 .cost-label:last-child {
@@ -662,13 +726,18 @@ menu {
   pointer-events: auto;
   width: 20px;
   height: 20px;
-  -webkit-appearance: none;
+  appearance: none;
+}
+
+.cost-input::-webkit-outer-spin-button,
+.cost-input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .view-buttons-container {
   display: flex;
   gap: 8px;
-  margin-left: 70px;
   padding: 0;
 }
 
@@ -752,6 +821,7 @@ menu {
   border-color: transparent;
   text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
 }
 
 .button:hover,
@@ -1049,6 +1119,20 @@ menu {
   align-items: center;
 }
 
+.modal-close-button:hover {
+  background-color: #e6e6e6;
+}
+
+.modal-close-button:focus {
+  border: 3px solid #83b3d3;
+}
+
+.modal-close-button:active {
+  background-color: #e6e6e6;
+  color: rgba(0, 0, 0, 0.3);
+  border: none;
+}
+
 .modal-content {
   box-sizing: border-box;
   display: flex;
@@ -1115,6 +1199,7 @@ menu {
   width: 100%;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .visitors-number {
@@ -1131,8 +1216,13 @@ menu {
   border: none;
   font-family: "PT Sans", sans-serif;
   font-style: normal;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
+}
+
+.quantity:focus {
+  outline: none;
 }
 
 .quantity::-webkit-inner-spin-button,
@@ -1161,6 +1251,34 @@ menu {
   color: rgba(117, 97, 87, 0.3);
 }
 
+.button-less:hover svg,
+.button-more:hover svg {
+  color: #000000;
+}
+
+.button-less:focus-within,
+.button-more:focus-within {
+  outline: none;
+  border: 3px solid #82b3d3;
+  border-radius: 4px;
+}
+
+.button-less:focus svg,
+.button-more:focus svg {
+  color: #000000;
+}
+
+.button-less:active,
+.button-more:active {
+  outline: none;
+  border: none;
+}
+
+.button-less:active svg,
+.button-more:active svg {
+  color: rgba(117, 97, 87, 0.2);
+}
+
 .modal-button {
   width: 100%;
   min-height: 60px;
@@ -1178,5 +1296,48 @@ menu {
 .modal-button:active {
   outline: none;
   background-color: #68a2ca;
-  color: rgba(255, 255, 255, 0.3)
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.tooltip {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  right: 147px;
+  background-color: #83b3d3;
+  border-radius: 50%;
+  background-image: url("../images/modal/tooltip.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tooltip-text {
+  display: none;
+  box-sizing: border-box;
+  position: absolute;
+  left: -114px;
+  top: 32px;
+  width: 256px;
+  min-height: 152px;
+  padding-top: 30px;
+  padding-left: 22px;
+  padding-right: 18px;
+  padding-bottom: 18px;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  background-image: url("../images/modal/tooltip-background.png");
+  background-size: cover;
+}
+
+.tooltip:hover {
+  background-color: rgba(131, 179, 211, 0.8);
+}
+
+.tooltip:hover .tooltip-text,
+.tooltip:focus .tooltip-text {
+  display: block;
 }

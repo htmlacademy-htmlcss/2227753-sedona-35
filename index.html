@@ -22,7 +22,7 @@
         </ul>
       </nav>
       <menu class="menu-list">
-           <li class="menu-item">
+          <li class="menu-item">
             <a class="menu-link" href="#">
               <img class="menu-image" src="images/header/search.svg" alt="Поиск" width="20" height="20">
               <span class="visually-hidden">Поиск</span>
@@ -107,7 +107,7 @@
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
           <input class="newsletter-field" type="email" name="user-email" id="newsletter-email" placeholder="Ваш e-mail" required>
           <button class="button newsletter-button" type="submit">
-            <span class="subscribe">Подписаться</span>
+            Подписаться
           </button>
         </form>
       </section>
@@ -117,7 +117,7 @@
         <ul class="footer-social-list">
           <li class="footer-social-item">
             <a href="https://vk.com/htmlacademy" class="button social-button">
-              <svg width="24" height="14" role="img" fill="currentColor" focusable="False" aria-labelledby="vk-label">
+              <svg width="24" height="14" role="img" fill="currentColor" aria-labelledby="vk-label">
                 <title id="vk-label">Наш ВК</title>
                 <use href="images/footer/footer-sprite.svg#vk"></use>
               </svg>
@@ -125,7 +125,7 @@
           </li>
           <li class="footer-social-item">
             <a href="https://t.me/htmlacademy " class="button social-button">
-              <svg width="18" height="16" role="img" fill="currentColor" focusable="False" aria-labelledby="telegram-label">
+              <svg width="18" height="16" role="img" fill="currentColor" aria-labelledby="telegram-label">
                 <title id="telegram-label">Наш Телеграмм</title>
                 <use href="images/footer/footer-sprite.svg#telegram"></use>
               </svg>
@@ -133,7 +133,7 @@
           </li>
           <li class="footer-social-item">
             <a href="https://www.youtube.com/user/htmlacademyru" class="button social-button">
-              <svg width="22" height="17" role="img" fill="currentColor" focusable="False" aria-labelledby="youtube-label">
+              <svg width="22" height="17" role="img" fill="currentColor" aria-labelledby="youtube-label">
                 <title id="youtube-label">Наш Youtube</title>
                 <use href="images/footer/footer-sprite.svg#youtube"></use>
               </svg>
@@ -150,7 +150,7 @@
       <section>
         <h2 class="section-title visually-hidden">HTML Академия</h2>
         <a class="copyright-button" href="https://htmlacademy.ru/">
-          <svg width="115" height="34" role="img" fill="currentColor" focusable="False" aria-labelledby="youtube-label">
+          <svg width="115" height="34" role="img" fill="currentColor" aria-labelledby="youtube-label">
             <title id="html-academy-logo">HTML Академия</title>
             <use href="images/footer/footer-sprite.svg#copyright"></use>
           </svg>
@@ -162,60 +162,63 @@
       <div class="modal">
         <h2 class="section-title modal-title">Поиск гостиницы в Седоне</h2>
         <button class="modal-close-button" type="button">
-          <svg width="15" height="15" fill="currentColor" focusable="False" aria-hidden="true">
+          <svg width="15" height="15" fill="currentColor" aria-hidden="true">
             <use href="images/modal/modal-sprites.svg#close-button"></use>
           </svg>
           <span class="visually-hidden">Закрыть</span>
         </button>
-        <div class="modal-search">
-        <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="modal-search" method="get" action="https://echo.htmlacademy.ru/">
+        <div class="modal-content">
           <label for="arr-date">Дата заезда:</label>
           <input class="dates" type="text" name="arrival-date" id="arr-date" placeholder="Укажите дату">
-          <svg width="16" height="15" fill="currentColor" focusable="False">
+          <svg width="16" height="15" fill="currentColor">
             <use href="images/modal/modal-sprites.svg#calendar"></use>
           </svg>
           <span class="modal-text red">Мы не можем отправить вас в прошлое.</span>
-        </form>
-        <form class="modal-content" action="https://echo.htmlacademy.ru/" method="post">
+        </div>
+        <div class="modal-content">
           <label for="dep-date">Дата выезда:</label>
           <input class="dates" type="text" name="departure-date" id="dep-date" placeholder="Укажите дату">
-          <svg width="16" height="15" fill="currentColor" focusable="False">
+          <svg width="16" height="15" fill="currentColor">
             <use href="images/modal/modal-sprites.svg#calendar"></use>
           </svg>
           <span class="modal-text">На эти даты есть свободные номера. Пока есть.</span>
-        </form>
+        </div>
         <div class="visitors">
           <label for="adult">Взрослые:</label>
           <div class="visitors-number">
-            <button class="button-less" type="button">
-              <svg width="14" height="2" fill="currentColor" focusable="False">
+            <button class="button-less" type="button" aria-label="Меньше">
+              <svg width="14" height="2" fill="currentColor">
                 <use href="images/modal/modal-sprites.svg#less"></use>
               </svg>
             </button>
-            <input class="quantity" id="adult" type="number" placeholder="2">
-            <button class="button-more" type="button">
-              <svg width="14" height="14" fill="currentColor" focusable="False">
+            <input class="quantity" id="adult" type="number" name="adult-number" placeholder="2">
+            <button class="button-more" type="button" aria-label="Больше">
+              <svg width="14" height="14" fill="currentColor">
                 <use href="images/modal/modal-sprites.svg#more"></use>
               </svg>
             </button>
           </div>
           <label for="children">Дети:</label>
+          <span class="tooltip" role="tooltip">
+            <span class="tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+          </span>
           <div class="visitors-number">
-            <button class="button-less" type="button">
-              <svg width="14" height="2" fill="currentColor" focusable="False">
+            <button class="button-less" type="button" aria-label="Меньше">
+              <svg width="14" height="2" fill="currentColor">
                 <use href="images/modal/modal-sprites.svg#less"></use>
               </svg>
             </button>
-            <input class="quantity" id="children" type="number" placeholder="2">
-            <button class="button-more" type="button">
-              <svg width="14" height="14" fill="currentColor" focusable="False">
+            <input class="quantity" id="children" type="number" name="children-number" placeholder="2">
+            <button class="button-more" type="button" aria-label="Больше">
+              <svg width="14" height="14" fill="currentColor">
                 <use href="images/modal/modal-sprites.svg#more"></use>
               </svg>
             </button>
           </div>
         </div>
         <button class="button modal-button">Найти</button>
-        </div>
+      </form>
       </div>
     </div>
   </body>
