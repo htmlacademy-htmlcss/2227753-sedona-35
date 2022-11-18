@@ -79,6 +79,7 @@ img {
   gap: 32px;
   align-items: baseline;
   margin-bottom: -1px;
+  padding-left: 14px;
 }
 
 .menu-list {
@@ -228,6 +229,15 @@ img {
 .advantages-description {
   margin: 0;
   padding: 0;
+  max-width: 230px;
+}
+
+.advantages-item:nth-child(1) .advantages-description,
+.advantages-item:nth-child(2) .advantages-description,
+.advantages-item:nth-child(3) .advantages-description,
+.advantages-item:nth-child(4) .advantages-description,
+.advantages-item:nth-child(5) .advantages-description {
+  margin-bottom: 20px;
 }
 
 .advantages-with-picture {
@@ -447,6 +457,7 @@ img {
 
 .breadcrumbs-link {
   color: inherit;
+  font-size: 16px;
 }
 
 .breadcrumb-icon {
@@ -501,7 +512,7 @@ img {
 }
 
 .catalog-filter-group:nth-of-type(3) {
-  margin-left: 70px;
+  margin-left: 76px;
 }
 
 .catalog-filter-item:hover {
@@ -748,7 +759,7 @@ img {
   justify-content: center;
   padding: 40px 0 40px;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 38px;
   border-bottom: solid 1px #e6e6e6;
 }
 
@@ -842,6 +853,7 @@ img {
 .search-hotel-button {
   width: 376px;
   min-height: 52px;
+  font-size: 20px;
 }
 
 .newsletter-button {
@@ -853,6 +865,7 @@ img {
   display: block;
   margin: 0;
   padding: 0;
+  font-size: 20px;
 }
 
 .footer-social .button {
