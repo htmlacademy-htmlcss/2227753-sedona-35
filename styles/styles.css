@@ -39,8 +39,6 @@ body {
 }
 
 img {
-  display: block;
-  padding: 0;
   max-width: 100%;
 }
 
@@ -781,6 +779,12 @@ img {
   margin: 0;
   padding: 0;
   grid-column: 1 / -1;
+}
+
+.hotel-card-image {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 
 .hotel-card-title {
