@@ -44,14 +44,6 @@ img {
   max-width: 100%;
 }
 
-ol,
-ul,
-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .page-header {
   background-color: #ffffff;
   color: #000000;
@@ -72,6 +64,7 @@ menu {
 
 .navigation-list,
 .menu-list {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -86,6 +79,7 @@ menu {
   gap: 32px;
   align-items: baseline;
   margin-bottom: -1px;
+  padding-left: 14px;
 }
 
 .menu-list {
@@ -200,6 +194,7 @@ menu {
 }
 
 .advantages-list {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
@@ -234,6 +229,15 @@ menu {
 .advantages-description {
   margin: 0;
   padding: 0;
+  max-width: 230px;
+}
+
+.advantages-item:nth-child(1) .advantages-description,
+.advantages-item:nth-child(2) .advantages-description,
+.advantages-item:nth-child(3) .advantages-description,
+.advantages-item:nth-child(4) .advantages-description,
+.advantages-item:nth-child(5) .advantages-description {
+  margin-bottom: 20px;
 }
 
 .advantages-with-picture {
@@ -387,6 +391,7 @@ menu {
 }
 
 .footer-social-list {
+  list-style-type: none;
   width: 142px;
   display: flex;
   align-items: center;
@@ -440,9 +445,11 @@ menu {
 }
 
 .breadcrumbs {
+  list-style-type: none;
   color: #ffffff;
   display: flex;
   align-items: center;
+  margin: 0;
   margin-top: 8px;
   padding: 0;
   gap: 10px;
@@ -450,6 +457,7 @@ menu {
 
 .breadcrumbs-link {
   color: inherit;
+  font-size: 16px;
 }
 
 .breadcrumb-icon {
@@ -496,6 +504,7 @@ menu {
 }
 
 .catalog-filter-list {
+  list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -503,7 +512,7 @@ menu {
 }
 
 .catalog-filter-group:nth-of-type(3) {
-  margin-left: 70px;
+  margin-left: 76px;
 }
 
 .catalog-filter-item:hover {
@@ -592,6 +601,7 @@ menu {
 }
 
 .hotels-found-list {
+  list-style-type: none;
   background-color: #ffffff;
   padding: 50px 70px 60px;
 }
@@ -742,12 +752,14 @@ menu {
 }
 
 .hotels-list {
+  list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
   justify-content: center;
   padding: 40px 0 40px;
-  margin-bottom: 40px;
+  margin: 0;
+  margin-bottom: 38px;
   border-bottom: solid 1px #e6e6e6;
 }
 
@@ -841,6 +853,7 @@ menu {
 .search-hotel-button {
   width: 376px;
   min-height: 52px;
+  font-size: 20px;
 }
 
 .newsletter-button {
@@ -852,6 +865,7 @@ menu {
   display: block;
   margin: 0;
   padding: 0;
+  font-size: 20px;
 }
 
 .footer-social .button {
@@ -1000,6 +1014,9 @@ menu {
 }
 
 .pagination {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   background-color: #ffffff;
   display: flex;
   gap: 8px;
