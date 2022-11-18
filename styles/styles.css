@@ -44,14 +44,6 @@ img {
   max-width: 100%;
 }
 
-ol,
-ul,
-menu {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
 .page-header {
   background-color: #ffffff;
   color: #000000;
@@ -72,6 +64,7 @@ menu {
 
 .navigation-list,
 .menu-list {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -200,6 +193,7 @@ menu {
 }
 
 .advantages-list {
+  list-style-type: none;
   display: flex;
   flex-wrap: wrap;
   flex-basis: 100%;
@@ -387,6 +381,7 @@ menu {
 }
 
 .footer-social-list {
+  list-style-type: none;
   width: 142px;
   display: flex;
   align-items: center;
@@ -440,9 +435,11 @@ menu {
 }
 
 .breadcrumbs {
+  list-style-type: none;
   color: #ffffff;
   display: flex;
   align-items: center;
+  margin: 0;
   margin-top: 8px;
   padding: 0;
   gap: 10px;
@@ -496,6 +493,7 @@ menu {
 }
 
 .catalog-filter-list {
+  list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -592,6 +590,7 @@ menu {
 }
 
 .hotels-found-list {
+  list-style-type: none;
   background-color: #ffffff;
   padding: 50px 70px 60px;
 }
@@ -742,11 +741,13 @@ menu {
 }
 
 .hotels-list {
+  list-style-type: none;
   display: grid;
   grid-template-columns: repeat(3, 340px);
   gap: 20px;
   justify-content: center;
   padding: 40px 0 40px;
+  margin: 0;
   margin-bottom: 40px;
   border-bottom: solid 1px #e6e6e6;
 }
@@ -1000,6 +1001,9 @@ menu {
 }
 
 .pagination {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
   background-color: #ffffff;
   display: flex;
   gap: 8px;
